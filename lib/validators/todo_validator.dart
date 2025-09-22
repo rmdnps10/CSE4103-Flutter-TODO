@@ -22,12 +22,12 @@ class TodoValidator {
 
     // 최소 길이 검사
     if (trimmedTitle.length < minLength) {
-      return '할 일을 최소 ${minLength}자 이상 입력해주세요.';
+      return '할 일을 최소 $minLength자 이상 입력해주세요.';
     }
 
     // 최대 길이 검사
     if (trimmedTitle.length > maxLength) {
-      return '할 일은 ${maxLength}자 이하로 입력해주세요.';
+      return '할 일은 $maxLength자 이하로 입력해주세요.';
     }
 
     // 유효한 입력
@@ -45,6 +45,6 @@ class TodoValidator {
 
   /// 입력 필드에 표시할 힌트 텍스트를 반환합니다.
   static String get hintText {
-    return '할 일을 ${minLength}자 이상 ${maxLength}자 이하로 입력하세요.';
+    return '할 일을 $minLength자 이상 $maxLength자 이하로 입력하세요.';
   }
 }
