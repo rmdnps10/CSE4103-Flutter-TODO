@@ -9,9 +9,9 @@ Flutter와 Riverpod을 사용하여 구현한 할 일 관리 애플리케이션�
 
 ### 사전 요구사항
 
-- Flutter SDK (3.0 이상)
+- Flutter SDK 
 - Dart SDK
-- Android Studio 또는 VS Code
+- VS Code
 
 ### 실행 명령어
 
@@ -137,8 +137,7 @@ class TodoValidator {
 
 - ✅ 3자 이상 10자 이하
 - ✅ 빈 문자열 불허
-- ✅ 실시간 에러 메시지
-- ✅ 입력 중 에러 메시지 자동 제거
+- ✅ 에러 메시지 노출
 
 ## 🌟 Bonus Points
 
@@ -184,22 +183,11 @@ state = [...state, newTodo];
    - 프레임 드롭 분석
    - 메모리 사용량 체크
 
-3. **Riverpod Inspector** (Provider 탭)
-   - Provider 상태 실시간 확인
-   - 의존성 그래프 시각화
-   - 상태 변화 추적
+3. **Memory 텝** 
 
-#### **디버깅 활용 예시**
+   - 메모리 현황 파악
 
-```dart
-// 개발 중 상태 확인
-print('현재 Todo 개수: ${ref.read(todoListProvider).length}');
 
-// DevTools에서 실시간 상태 모니터링
-// - todoListProvider의 현재 값
-// - 상태 변화 히스토리
-// - 의존성 관계
-```
 
 ### 3. **추가 구현 사항**
 
@@ -212,14 +200,12 @@ print('현재 Todo 개수: ${ref.read(todoListProvider).length}');
 
 #### **에러 처리**
 
-- 사용자 친화적 에러 메시지
-- 실시간 유효성 검사
 - 입력 제한으로 예방적 에러 방지
 
 #### **사용자 경험 (UX)**
 
-- 즉시 피드백 (에러 메시지)
 - 직관적인 UI (체크박스, 취소선)
+- 즉시 피드백 (에러 메시지)
 - 편리한 입력 방식 (Enter 키, FAB)
 
 ## 📱 주요 기능
@@ -227,9 +213,7 @@ print('현재 Todo 개수: ${ref.read(todoListProvider).length}');
 - ✅ 할 일 추가 (3-10자 제한)
 - ✅ 할 일 완료/미완료 토글
 - ✅ 할 일 삭제
-- ✅ 실시간 입력 검증
 - ✅ 완료된 할 일 시각적 표시 (취소선)
-- ✅ 반응형 UI (상태 변화에 따른 자동 업데이트)
 
 ## 🛠️ 기술 스택
 
