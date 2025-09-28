@@ -4,12 +4,11 @@ Flutter와 Riverpod을 사용하여 구현한 할 일 관리 애플리케이션�
 
 [기술 블로그에 올린 글](https://rmdnps10.github.io/Flutter%EC%97%90%EC%84%9C%20Riverpods%20%EC%9E%98%20%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0/)
 
-
 ## 🚀 빌드 및 실행 방법
 
 ### 사전 요구사항
 
-- Flutter SDK 
+- Flutter SDK
 - Dart SDK
 - VS Code
 
@@ -23,9 +22,9 @@ flutter pub get
 flutter run
 
 # 앱 빌드 (릴리즈 모드)
-flutter build apk         
-flutter build ios         
-flutter build web         
+flutter build apk
+flutter build ios
+flutter build web
 ```
 
 ### DevTools 실행
@@ -143,7 +142,6 @@ class TodoValidator {
 
 ### 1. **Riverpod 상태 관리**
 
-
 #### **구현 세부사항**
 
 ```dart
@@ -169,25 +167,29 @@ state = [...state, newTodo];
 
 ### 2. **Flutter DevTools 활용**
 
-#### **사용 기능들**
+### Inspector
 
-1. **Widget Inspector**
+![inspector](./README-img/inspector.png)
 
-   - 위젯 트리 구조 분석
-   - 레이아웃 디버깅
-   - 위젯 속성 실시간 확인
+### Timeline, performance
 
-2. **Performance 탭**
+- Chrome (Web에서 실행)
 
-   - 앱 성능 모니터링
-   - 프레임 드롭 분석
-   - 메모리 사용량 체크
+![timeline, performance](./README-img/timeline-performance1.png)
 
-3. **Memory 텝** 
+- Flutter Devtools (Android로 실행)
 
-   - 메모리 현황 파악
+![timeline, performance](./README-img/timeline-performance2.png)
 
+### Memory
 
+- Chrome (Web에서 실행)
+
+![Memory](./README-img/memory-1.png)
+
+- Flutter Devtools (Android로 실행)
+
+![Memory](./README-img/memory-2.png)
 
 ### 3. **추가 구현 사항**
 
@@ -223,29 +225,10 @@ state = [...state, newTodo];
 - **Material Design**: UI 디자인 시스템
 - **Flutter DevTools**: 개발 및 디버깅 도구
 
----
+## 리스트 추가, 삭제, 완료 스크린샷
 
-## DevTools 화면 스크린샷
 
-### Inspector
-![inspector](./README-img/inspector.png)
+| 리스트 추가 | 리스트 완료 | 리스트 삭제 
+|---| --|--|
+|![list-add](./README-img/screenshot-1.png) |  ![list-done](./README-img/screenshot-2.png) | ![list-delete](./README-img/screenshot-3.png) |
 
-### Timeline, performance
-
-- Chrome (Web에서 실행)
-
-![timeline, performance](./README-img/timeline-performance1.png)
-
-- Flutter Devtools (Android로 실행)
-
-![timeline, performance](./README-img/timeline-performance2.png)
-
-### Memory 
-
-- Chrome (Web에서 실행)
-
-![Memory](./README-img/memory-1.png)
-
-- Flutter Devtools (Android로 실행)
-
-![Memory](./README-img/memory-2.png)
